@@ -4,11 +4,11 @@ export default function Navbar() {
       <div className="w-full h-8 bg-primary absolute"></div>
       <div className="w-full z-10 flex  items-center justify-between">
         <div className="flex w-[75%]">
-          <div className="font-pacifico bg-white w-32 h-12 items-center justify-center text-3xl rounded-full ml-24 drop-shadow-lg hover:bg-slate-200 xl:flex hidden">
+          <div className="font-pacifico bg-white w-32 h-12 items-center justify-center text-3xl rounded-3xl ml-24 drop-shadow-lg hover:bg-slate-200 xl:flex hidden">
             <a href="../index.js">Yammi</a>
           </div>
 
-          <div className="bg-white ml-1 h-12 grid-cols-6 w-[70%] rounded-full drop-shadow-lg gap-7 px-10 relative items-center justify-center xl:flex hidden ">
+          <div className="bg-white ml-1 h-12 grid-cols-6 w-[70%] rounded-3xl drop-shadow-lg gap-7 px-10 relative items-center justify-center xl:flex hidden ">
             <div className=" uppercase text-lg">recipes</div>
             <div className="  uppercase text-lg">popular</div>
             <div className=" uppercase text-lg">meat</div>

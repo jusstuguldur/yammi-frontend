@@ -14,10 +14,10 @@ module.exports = {
         pacifico: ["Pacifico"],
       },
       colors: {
-        primary: "#FF8000",
+        primary: "#ff4141",
         beige: "#FAEFE0",
-        secondary: "#ff0ff0",
-        nogoo: "#008000",
+        vegetable: "#39dd00",
+        meat: "ff3333",
       },
     },
   },

@@ -1,11 +1,13 @@
+import Link from "next/link";
+
 export default function Hero() {
   const data = [
     {
       name: "Pizza",
       materials: [
         { name: "Гурил", color: "beige" },
-        { name: "Сонгино", color: "nogoo" },
-        { name: "Гурил", color: "#ff8877" },
+        { name: "Гурил", color: "vegetable" },
+        { name: "Гурил", color: "meat" },
         { name: "Гурил", color: "#ff8877" },
         { name: "Гурил", color: "#ff8877" },
       ],
@@ -26,10 +28,10 @@ export default function Hero() {
       duration: "30m",
       desc: "Lorem ipsum",
       background:
-        "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftarasmulticulturaltable.com%2Ftsuivan-mongolian-noodles%2F&psig=AOvVaw07KVYqpEZpILRNhmP8IwJK&ust=1681258845037000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCKCexbPHoP4CFQAAAAAdAAAAABAL",
+        "https://tarasmulticulturaltable.com/wp-content/uploads/2021/03/Tsuivan-Mongolian-Noodles-with-Meat-and-Vegetables-1-of-1.jpg",
     },
     {
-      name: "Pizza",
+      name: "Хуушуур",
       materials: [
         { name: "Гурил", color: "#ff8877" },
         { name: "Гурил", color: "#ff8877" },
@@ -39,10 +41,11 @@ export default function Hero() {
       ],
       duration: "40m",
       desc: "Lorem ipsum",
-      background: "",
+      background:
+        "https://upload.wikimedia.org/wikipedia/commons/8/8d/MongoliaLastDay_153.JPG",
     },
     {
-      name: "Pizza",
+      name: "Жэюүг",
       materials: [
         { name: "Гурил", color: "#ff8877" },
         { name: "Гурил", color: "#ff8877" },
@@ -52,10 +55,11 @@ export default function Hero() {
       ],
       duration: "40m",
       desc: "Lorem ipsum",
-      background: "",
+      background:
+        "https://carmyy.com/wp-content/uploads/2022/04/Spicy-Pork-Stir-Fry-6.jpg",
     },
     {
-      name: "Pizza",
+      name: "Fries",
       materials: [
         { name: "Гурил", color: "#ff8877" },
         { name: "Гурил", color: "#ff8877" },
@@ -65,12 +69,13 @@ export default function Hero() {
       ],
       duration: "40m",
       desc: "Lorem ipsum",
-      background: "",
+      background:
+        "https://img.taste.com.au/ol2Jq8ZQ/taste/2016/11/rachel-87711-2.jpeg",
     },
   ];
 
   return (
-    <div className="w-full h-[95vh] pt-8 sticky">
+    <div className="w-full pt-8 sticky mb-12">
       <div className="w-full h-8 text-2xl pl-[7%] mb-4 uppercase">
         Trendings
       </div>
@@ -103,14 +108,13 @@ export default function Hero() {
             key={i}
             className="w-[95%] h-full bg-white rounded-3xl drop-shadow-lg overflow-hidden py-4 px-4 relative"
           >
-            {/* <div className="w-full  h-96 rounded-full -mt-48 drop-shadow-lg border-2 border-white bg-[url('https://popmenucloud.com/acopktgy/a5e912c9-cf13-47c8-874c-91394bab4c5d')] bg-contain bg-bottom bg-no-repeat"></div> */}
             <img
               src={row.background}
               alt="food"
               className="absolute h-32 object-cover object-center top-0 left-0 w-full drop-shadow-lg border-2 border-white -translate-y-4 rounded-b-full"
             />
 
-            <div className="font-pacifico w-full h-10 text-5xl flex justify-center mt-32">
+            <div className="font-pacifico w-full h-10 text-3xl flex justify-center mt-32">
               {row.name}
             </div>
             <div className="w-full flex justify-center mt-4">
@@ -136,7 +140,9 @@ export default function Hero() {
             </div>
 
             <div className="w-full py-2 bg-primary rounded-full drop-shadow-lg flex justify-center items-center text-white">
-              Үргэлжлүүлэх
+              <Link href="../details.js" legacyBehavior>
+                <a>Үргэлжлүүлэх</a>
+              </Link>
             </div>
           </div>
         ))}
