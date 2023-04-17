@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="w-full h-12 sticky z-10 top-0 flex items-center bg-beige">
+    <div className="w-full h-12 sticky z-20 top-0 flex items-center bg-beige">
       <div className="w-full h-8 bg-primary absolute"></div>
       <div className="w-full z-10 flex  items-center justify-between">
         <div className="flex w-[75%]">

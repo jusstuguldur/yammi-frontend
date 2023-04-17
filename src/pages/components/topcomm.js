@@ -1,5 +1,6 @@
 import { data } from "autoprefixer";
 import Link from "next/link";
+import Star from "./star";
 
 export default function Topcomment() {
   const comment = [
@@ -9,15 +10,15 @@ export default function Topcomment() {
       rating: "5",
       food: "Pizza",
       profile: "../muune copy.jpg",
-      time: "69 days ago",
+      time: "69",
     },
     {
       name: "Muunee",
       comment: "bla bla bla bla",
-      rating: "4",
+      rating: 4,
       food: "Pizza",
       profile: "../muune copy.jpg",
-      time: "69 days ago",
+      time: "69",
     },
     {
       name: "Muunee",
@@ -25,12 +26,16 @@ export default function Topcomment() {
       rating: "3",
       food: "Pizza",
       profile: "../muune copy.jpg",
-      time: "69 days ago",
+      time: "69",
     },
   ];
   return (
-    <div className="w-full h-screen relative">
-      <div className="w-[80%] h-8 bg-primary absolute top-[25%]"></div>
+    <div className="w-full mb-24 relative">
+      <div className="w-[80%] h-8 bg-primary absolute top-[12rem]"></div>
+      <div className="flex absolute justify-center w-full gap-[49rem]">
+        <div className="w-8 h-60 bg-primary translate-y-[90%]"></div>
+        <div className="w-8 h-60 bg-primary translate-y-[90%]"></div>
+      </div>
       <div className="flex gap-4 px-28">
         {comment.map((row, i) => (
           <div
@@ -49,6 +54,7 @@ export default function Topcomment() {
                   <div className="mr-1">reviewed</div>
                   <div className="text-primary">{row.food}</div>
                 </div>
+                <Star value={3.3} disabled />
                 {/* {row.rating.map((star, j<=5) => (
                   <div className="h-2 w-2 bg-black"></div>
                 ))} */}
@@ -60,7 +66,9 @@ export default function Topcomment() {
                 Try
               </div>
             </div>
-            <div className=" text-gray-500 text-sm mt-4">{row.time}</div>
+            <div className=" text-gray-500 text-sm mt-4">
+              {row.time} days ago
+            </div>
           </div>
         ))}
       </div>

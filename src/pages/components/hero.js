@@ -1,43 +1,45 @@
 import Link from "next/link";
+import { useState } from "react";
+import Star from "./star";
 
 export default function Hero() {
   const data = [
     {
       name: "Pizza",
       materials: [
-        { name: "Гурил", color: "beige" },
-        { name: "Гурил", color: "vegetable" },
-        { name: "Гурил", color: "meat" },
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
+        { name: "Гурил", color: "#FFB266" },
+        { name: "Бяслаг", color: "#39dd00" },
+        { name: "Хиам", color: "#FF5A50" },
+        { name: "Давс", color: "#FF6678" },
+        { name: "Кетчуп", color: "#FF6678" },
       ],
       duration: "40min",
-      desc: "Lorem ipsum",
+      desc: "Lorem ipsum Lorem ipsum Lorem ipsum v Lorem ipsum Lorem ipsumLorem ipsum",
       background:
         "https://popmenucloud.com/acopktgy/a5e912c9-cf13-47c8-874c-91394bab4c5d",
     },
     {
       name: "Цуйван",
       materials: [
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
+        { name: "Гурил", color: "#FFB266" },
+        { name: "Бяслаг", color: "#39dd00" },
+        { name: "Хиам", color: "#FF5A50" },
+        { name: "Давс", color: "#FF6678" },
+        { name: "Кетчуп", color: "#FF6678" },
       ],
       duration: "30m",
       desc: "Lorem ipsum",
       background:
-        "https://tarasmulticulturaltable.com/wp-content/uploads/2021/03/Tsuivan-Mongolian-Noodles-with-Meat-and-Vegetables-1-of-1.jpg",
+        "https://cdn.sunbasket.com/7912dde9-18c7-46d7-8cfe-e935cabbff55.jpeg",
     },
     {
       name: "Хуушуур",
       materials: [
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
+        { name: "Гурил", color: "#FFB266" },
+        { name: "Бяслаг", color: "#39dd00" },
+        { name: "Хиам", color: "#FF5A50" },
+        { name: "Давс", color: "#FF6678" },
+        { name: "Кетчуп", color: "#FF6678" },
       ],
       duration: "40m",
       desc: "Lorem ipsum",
@@ -47,11 +49,11 @@ export default function Hero() {
     {
       name: "Жэюүг",
       materials: [
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
+        { name: "Гурил", color: "#FFB266" },
+        { name: "Бяслаг", color: "#39dd00" },
+        { name: "Хиам", color: "#FF5A50" },
+        { name: "Давс", color: "#FF6678" },
+        { name: "Кетчуп", color: "#FF6678" },
       ],
       duration: "40m",
       desc: "Lorem ipsum",
@@ -61,11 +63,11 @@ export default function Hero() {
     {
       name: "Fries",
       materials: [
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
-        { name: "Гурил", color: "#ff8877" },
+        { name: "Гурил", color: "#FFB266" },
+        { name: "Бяслаг", color: "#39dd00" },
+        { name: "Хиам", color: "#FF5A50" },
+        { name: "Давс", color: "#FF6678" },
+        { name: "Кетчуп", color: "#FF6678" },
       ],
       duration: "40m",
       desc: "Lorem ipsum",
@@ -73,6 +75,8 @@ export default function Hero() {
         "https://img.taste.com.au/ol2Jq8ZQ/taste/2016/11/rachel-87711-2.jpeg",
     },
   ];
+
+  const [review, setReview] = useState(3);
 
   return (
     <div className="w-full pt-8 sticky mb-12">
@@ -135,13 +139,13 @@ export default function Hero() {
                 </div>
               ))}
             </div>
-            <div className="w-full px-8 flex justify-center my-4">
+            <div className="w-full h-16 px-8 flex justify-center my-4 truncate ">
               {row.desc}
             </div>
 
             <div className="w-full py-2 bg-primary rounded-full drop-shadow-lg flex justify-center items-center text-white">
               <Link href="../details.js" legacyBehavior>
-                <a>Үргэлжлүүлэх</a>
+                Үргэлжлүүлэх
               </Link>
             </div>
           </div>
