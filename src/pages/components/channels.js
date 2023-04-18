@@ -34,17 +34,17 @@ export default function Channels() {
         {channels.map((row, i) => (
           <div
             key={i}
-            className="bg-white w-80 p-4 rounded-3xl translate-y-1/3"
+            className="bg-white w-80 rounded-3xl translate-y-1/3 p-4"
           >
             <img
               src={row.profile}
               className="w-24 m-0 rounded-full -right-1/2 translate-x-1/2 -translate-y-1/2 border-2 border-white drop-shadow-lg"
             />
-            <div className="left-1/2 translate-x-1/2">{row.name}</div>
-            <Star value={row.rating} disabled></Star>
+            <div className="">{row.name}</div>
+            <Star value={row.rating} disabled className=""></Star>
             <div className="w-full">{row.desc} </div>
             <div className="w-full py-2 bg-primary rounded-3xl flex justify-center text-white mt-4">
-              Үргэлжлүүлэt
+              Үргэлжлүүлэх
             </div>
           </div>
         ))}
