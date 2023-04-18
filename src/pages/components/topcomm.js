@@ -36,7 +36,7 @@ export default function Topcomment() {
         <div className="w-8 h-60 bg-primary translate-y-[90%]"></div>
         <div className="w-8 h-60 bg-primary translate-y-[90%]"></div>
       </div>
-      <div className="flex gap-4 px-28">
+      <div className="grid grid-cols-3 gap-4 px-28">
         {comment.map((row, i) => (
           <div
             key={i}

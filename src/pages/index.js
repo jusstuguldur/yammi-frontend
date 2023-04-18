@@ -25,6 +25,7 @@ export default function Home() {
         <Topcomment></Topcomment>
         <Interest></Interest>
         <ForYou></ForYou>
+        <Channels></Channels>
         <Footer></Footer>
       </div>
     </>

@@ -1,5 +1,3 @@
-const foryou = [{}];
-
 export default function ForYou() {
   return (
     <div>
