@@ -44,7 +44,7 @@ export default function Channels() {
             <Star value={row.rating} disabled></Star>
             <div className="w-full">{row.desc} </div>
             <div className="w-full py-2 bg-primary rounded-3xl flex justify-center text-white mt-4">
-              Үргэлжлүүлэх
+              Үргэлжлүүлэt
             </div>
           </div>
         ))}
