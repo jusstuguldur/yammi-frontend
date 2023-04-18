@@ -144,7 +144,7 @@ export default function Hero() {
             </div>
 
             <div className="w-full py-2 bg-primary rounded-full drop-shadow-lg flex justify-center items-center text-white">
-              <Link href="../details.js" legacyBehavior>
+              <Link href="/details" legacyBehavior>
                 Үргэлжлүүлэх
               </Link>
             </div>
