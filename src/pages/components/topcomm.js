@@ -7,23 +7,23 @@ export default function Topcomment() {
     {
       name: "Muunee",
       comment: "bla bla bla bla",
+      rating: "2",
+      food: "Pizza",
+      profile: "../muune copy.jpg",
+      time: "69",
+    },
+    {
+      name: "Muunee",
+      comment: "bla bla bla bla",
+      rating: "1",
+      food: "Pizza",
+      profile: "../muune copy.jpg",
+      time: "69",
+    },
+    {
+      name: "Muunee",
+      comment: "bla bla bla bla",
       rating: "5",
-      food: "Pizza",
-      profile: "../muune copy.jpg",
-      time: "69",
-    },
-    {
-      name: "Muunee",
-      comment: "bla bla bla bla",
-      rating: 4,
-      food: "Pizza",
-      profile: "../muune copy.jpg",
-      time: "69",
-    },
-    {
-      name: "Muunee",
-      comment: "bla bla bla bla",
-      rating: "3",
       food: "Pizza",
       profile: "../muune copy.jpg",
       time: "69",
@@ -54,7 +54,7 @@ export default function Topcomment() {
                   <div className="mr-1">reviewed</div>
                   <div className="text-primary">{row.food}</div>
                 </div>
-                <Star value={3.3} disabled />
+                <Star value={row.rating} disabled />
                 {/* {row.rating.map((star, j<=5) => (
                   <div className="h-2 w-2 bg-black"></div>
                 ))} */}
