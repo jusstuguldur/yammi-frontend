@@ -96,7 +96,7 @@ function calculateStar(current, value) {
 
 export default function Star({ value, setValue, disabled = false }) {
   return (
-    <div className="flex gap-1 ml-4">
+    <div className="flex gap-1/2 ml-4">
       {value && value > 0
         ? [...Array(5).keys()].map((row) => (
             <button

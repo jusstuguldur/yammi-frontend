@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <div className="w-full h-12 sticky z-20 top-0 flex items-center bg-beige">
@@ -84,7 +86,9 @@ export default function Navbar() {
           </svg>
 
           <div className="bg-primary w-20 h-10 rounded-full drop-shadow-lg flex items-center justify-center text-white">
-            Нэвтрэх
+            <Link href="/login" legacyBehavior>
+              Нэвтрэх
+            </Link>
           </div>
         </div>
       </div>
