@@ -11,7 +11,7 @@ export default function Navbar() {
           </div>
 
           <div className="bg-white ml-1 h-12 grid-cols-6 w-[70%] rounded-3xl drop-shadow-lg gap-7 px-10 relative items-center justify-center xl:flex hidden ">
-            <div className=" uppercase text-lg">Жор</div>
+            <div className=" uppercase text-lg">Жорр</div>
             <div className="  uppercase text-lg">Алдартай</div>
             <div className=" uppercase text-lg">Мах</div>
             <div className=" uppercase text-lg">Эрүүл</div>
