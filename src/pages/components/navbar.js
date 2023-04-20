@@ -7,13 +7,13 @@ export default function Navbar() {
       <div className="w-full z-10 flex  items-center justify-between">
         <div className="flex w-[75%]">
           <div className="font-pacifico bg-white w-32 h-12 items-center justify-center text-3xl rounded-3xl ml-24 drop-shadow-lg hover:bg-slate-200 xl:flex hidden">
-            <a href="../index.js">Yammi</a>
+            <Link href="/">Yammi</Link>
           </div>
 
           <div className="bg-white ml-1 h-12 grid-cols-6 w-[70%] rounded-3xl drop-shadow-lg gap-7 px-10 relative items-center justify-center xl:flex hidden ">
-            <div className=" uppercase text-lg">Жорр</div>
+            <div className=" uppercase text-lg">Бүх жор</div>
             <div className="  uppercase text-lg">Алдартай</div>
-            <div className=" uppercase text-lg">Мах</div>
+            <div className=" uppercase text-lg">Махтай</div>
             <div className=" uppercase text-lg">Эрүүл</div>
             <div className="uppercase text-lg">Баярын</div>
             <div className=" uppercase text-lg">Хуваалцах</div>

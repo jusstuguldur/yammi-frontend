@@ -16,10 +16,10 @@ export default function Interest() {
             className=""
           ></img>
         </div>
-        <div className="w-[45rem] h-72 rounded-r-full bg-white drop-shadow-lg -ml-16 flex justify-center py-10">
+        <div className="w-[45rem] h-64 rounded-r-full bg-white drop-shadow-lg -ml-16 flex justify-center py-10">
           <div className="">
             <div className=" text-2xl font-bold text-center">Did you know?</div>
-            <div className="text-3xl  px-12 text-center mt-4">
+            <div className="text-2xl  px-12 text-center mt-4">
               Potatoes were the first food planted in space.
             </div>
           </div>

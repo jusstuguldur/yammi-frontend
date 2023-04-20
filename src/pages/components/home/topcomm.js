@@ -6,7 +6,7 @@ export default function Topcomment() {
   const comment = [
     {
       name: "Muunee",
-      comment: "bla bla bla bla",
+      comment: "bi gomo",
       rating: "2",
       food: "Pizza",
       profile: "../muune copy.jpg",
@@ -28,6 +28,14 @@ export default function Topcomment() {
       profile: "../muune copy.jpg",
       time: "69",
     },
+    {
+      name: "Muunee",
+      comment: "bla bla bla bla",
+      rating: "5",
+      food: "Pizza",
+      profile: "../muune copy.jpg",
+      time: "69",
+    },
   ];
   return (
     <div className="w-full mb-24 relative">
@@ -36,11 +44,11 @@ export default function Topcomment() {
         <div className="w-8 h-60 bg-primary translate-y-[90%]"></div>
         <div className="w-8 h-60 bg-primary translate-y-[90%]"></div>
       </div>
-      <div className="grid grid-cols-3 gap-4 px-28">
+      <div className="grid grid-cols-4 gap-4 px-20">
         {comment.map((row, i) => (
           <div
             key={i}
-            className="w-full h-[350px] bg-white rounded-t-[20%] relative rounded-br-[20%] drop-shadow-md p-6"
+            className="w-full h-[350px] bg-white rounded-t-[40px] relative rounded-br-[40px] drop-shadow-md p-6"
           >
             <div className="flex w-full">
               <img
@@ -54,16 +62,9 @@ export default function Topcomment() {
                   <div className="mr-1">reviewed</div>
                   <div className="text-primary">{row.food}</div>
                 </div>
-<<<<<<< HEAD:src/pages/components/home/topcomm.js
-                <div className="w-full pl-4">
-                  <Star value={3.3} disabled />
+                <div className="pl-4">
+                  <Star value={row.rating} disabled />
                 </div>
-=======
-                <Star value={row.rating} disabled />
->>>>>>> a32ee0331a2a39925f3846a4fdd9791548478aab:src/pages/components/topcomm.js
-                {/* {row.rating.map((star, j<=5) => (
-                  <div className="h-2 w-2 bg-black"></div>
-                ))} */}
               </div>
             </div>
             <div className="w-full mt-8 h-28">{row.comment}</div>
