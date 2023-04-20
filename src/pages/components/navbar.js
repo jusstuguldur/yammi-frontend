@@ -66,7 +66,9 @@ export default function Navbar() {
             />
           </svg>
           <div className="bg-primary w-28 h-10 rounded-full drop-shadow-lg flex items-center justify-center text-white">
-            Нэвтрэх
+            <Link href="/login" legacyBehavior>
+              Нэвтрэх
+            </Link>
           </div>
         </div>
         <div className=" w-60 h-12 drop-shadow-lg rounded-l-full items-center justify-center px-1 flex grid-cols-2 gap-6 bg-white xl:hidden">

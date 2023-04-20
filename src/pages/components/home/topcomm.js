@@ -1,6 +1,6 @@
 import { data } from "autoprefixer";
 import Link from "next/link";
-import Star from "./star";
+import Star from "../star";
 
 export default function Topcomment() {
   const comment = [
@@ -54,7 +54,9 @@ export default function Topcomment() {
                   <div className="mr-1">reviewed</div>
                   <div className="text-primary">{row.food}</div>
                 </div>
-                <Star value={3.3} disabled />
+                <div className="w-full pl-4">
+                  <Star value={3.3} disabled />
+                </div>
                 {/* {row.rating.map((star, j<=5) => (
                   <div className="h-2 w-2 bg-black"></div>
                 ))} */}

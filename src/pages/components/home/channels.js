@@ -1,5 +1,5 @@
 import { Architects_Daughter, Rowdies } from "next/font/google";
-import Star from "./star";
+import Star from "../star";
 
 const channels = [
   {
@@ -42,7 +42,9 @@ export default function Channels() {
               className="w-24 rounded-full inline-block -translate-y-2/3 border-2 border-white drop-shadow-lg"
             />
             <div className="-mt-12 font-semibold">{row.name}</div>
-            <Star disabled value={row.rating} className=""></Star>
+            <div className="flex justify-center w-full">
+              <Star disabled value={row.rating}></Star>
+            </div>
             <div className="mt-8">{row.desc}</div>
             <div className="w-full py-4 bg-primary rounded-3xl text-white mt-8">
               Үргэлжлүүлэх

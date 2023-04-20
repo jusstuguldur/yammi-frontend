@@ -9,7 +9,7 @@ import Link from "next/link";
 import Interest from "./components/interest";
 import Footer from "./components/footer";
 import ForYou from "./components/foryou";
-import Channels from "./components/channels";
+import Channels from "./components/home/channels";
 
 const inter = Inter({ subsets: ["latin"] });
 

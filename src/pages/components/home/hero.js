@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
-import Star from "./star";
+import Star from "../star";
 
 export default function Hero() {
   const data = [
@@ -144,7 +144,7 @@ export default function Hero() {
             </div>
 
             <div className="w-full py-2 bg-primary rounded-full drop-shadow-lg flex justify-center items-center text-white">
-              <Link href="/details" legacyBehavior>
+              <Link href="/details" legacyBehavior className="">
                 Үргэлжлүүлэх
               </Link>
             </div>
