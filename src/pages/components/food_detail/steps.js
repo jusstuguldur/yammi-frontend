@@ -1,3 +1,5 @@
+import Star from "../star";
+
 const details = [
   {
     name: "steak",
@@ -37,14 +39,16 @@ const details = [
 
 export default function Steps() {
   return details.map((row, i) => (
-    <div className="w-full py-6 bg-black flex">
+    <div className="w-full py-6 flex">
       <div className="w-[35%] py-10 flex items-center">
         <img
           src={row.image}
-          className="rounded-full border-2 border-white   "
+          className="rounded-full border-4 border-white h-[30rem] w-[30rem] -ml-16 drop-shadow-lg object-cover object-center  "
         />
       </div>
-      <div className="w-[65%] py-10 bg-red-500"></div>
+      <div className="w-[65%] h-fit flex justify-center">
+        <div className="w-[75%] py-2 bg-black"></div>
+      </div>
     </div>
   ));
 }
