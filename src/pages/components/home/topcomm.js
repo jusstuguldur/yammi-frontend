@@ -54,13 +54,7 @@ export default function Topcomment() {
                   <div className="mr-1">reviewed</div>
                   <div className="text-primary">{row.food}</div>
                 </div>
-<<<<<<< HEAD:src/pages/components/home/topcomm.js
-                <div className="w-full pl-4">
-                  <Star value={3.3} disabled />
-                </div>
-=======
                 <Star value={row.rating} disabled />
->>>>>>> a32ee0331a2a39925f3846a4fdd9791548478aab:src/pages/components/topcomm.js
                 {/* {row.rating.map((star, j<=5) => (
                   <div className="h-2 w-2 bg-black"></div>
                 ))} */}

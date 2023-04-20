@@ -3,12 +3,12 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Navbar from "./components/navbar";
-import Hero from "./components/hero";
-import Topcomment from "./components/topcomm";
+import Hero from "./components/home/hero";
+import Topcomment from "./components/home/topcomm";
 import Link from "next/link";
-import Interest from "./components/interest";
+import Interest from "./components/home/interest";
 import Footer from "./components/footer";
-import ForYou from "./components/foryou";
+import ForYou from "./components/home/foryou";
 import Channels from "./components/home/channels";
 
 const inter = Inter({ subsets: ["latin"] });
