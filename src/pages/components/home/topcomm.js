@@ -73,7 +73,7 @@ export default function Topcomment() {
                 Try
               </div>
             </div>
-            <div className=" text-gray-500 text-sm mt-4">
+            <div className=" text-gray-500 text-sm mt-8">
               {row.time} days ago
             </div>
           </div>

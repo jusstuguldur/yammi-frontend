@@ -2,9 +2,9 @@ import Star from "../star";
 
 const details = [
   {
-    name: "steak",
+    name: "Steak",
     duration: "50 minutes",
-    materials: [
+    materias: [
       { name: "Гурил", color: "#FFB266" },
       { name: "Бяслаг", color: "#39dd00" },
       { name: "Хиам", color: "#FF5A50" },
@@ -47,7 +47,20 @@ export default function Steps() {
         />
       </div>
       <div className="w-[65%] h-fit flex justify-center">
-        <div className="w-[75%] py-2 bg-black"></div>
+        <div className="absolute w-8 h-full bg-primary z-0"></div>
+        <div className="w-[75%] py-4 bg-white rounded-3xl z-10">
+          <div className="flex px-16">
+            <div className="font-pacifico text-4xl">{row.name}</div>
+            <div className=" ml-8 mt-2 text-xl">({row.status})</div>
+            <div className="ml-4 mt-2">
+              <Star value={row.rating} className></Star>
+            </div>
+          </div>
+          <div className="w-full flex justify-center">{row.duration}</div>
+          <div className="w-full h-8 bg-primary text-white pl-16">
+            Материалууд:
+          </div>
+        </div>
       </div>
     </div>
   ));
