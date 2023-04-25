@@ -131,8 +131,8 @@ export default function Hero() {
                   key={j}
                   className={
                     j >= 3
-                      ? `px-1 h-6 rounded-full drop-shadow-md text-white flex justify-center translate-x-[65%]`
-                      : `px-1 h-6 rounded-full drop-shadow-md  text-white flex justify-center`
+                      ? `px-1 h-6 rounded-full drop-shadow-md text-white flex justify-center translate-x-[65%] text-sm item-center`
+                      : `px-1 h-6 rounded-full drop-shadow-md  text-white flex justify-center text-sm items-center`
                   }
                 >
                   {mat.name}
