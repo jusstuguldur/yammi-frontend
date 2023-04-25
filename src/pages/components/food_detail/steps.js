@@ -79,11 +79,13 @@ export default function Steps() {
           </div>
         </div>
       </div>
-      {/*name videos and others */}
+      {/*name status etc */}
       <div className="w-[77%] py-8 ml-[23%] flex justify-center">
-        <div className="w-[90%] py-4 rounded-3xl bg-white drop-shadow-lg flex items-center px-4">
-          <div className="">"{row.profile}"</div>
-          <div className="font-pacifico text-4xl">{row.name}</div>
+        <div className="w-[80%] py-4 rounded-3xl bg-white drop-shadow-lg flex items-center px-4 justify-center">
+          <div className="w-20 h-20 rounded-full border-2 border-white drop-shadow-lg overflow-hidden absolute left-0 translate-x-1/2">
+            <img src={row.profile} className="object-center object-cover" />
+          </div>
+          <div className="font-pacifico text-4xl ml-28">{row.name}</div>
           <div className="mx-8 mt-4">{row.status}</div>
           <Star value={row.rating} className="mt-4"></Star>
           <svg
@@ -102,6 +104,10 @@ export default function Steps() {
           </svg>
         </div>
       </div>
+
+      {/*food profile */}
+
+      <div></div>
     </div>
   ));
 }
