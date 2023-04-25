@@ -6,7 +6,7 @@ export default function Topcomment() {
   const comment = [
     {
       name: "Muunee",
-      comment: "bi gomo",
+      comment: "goy site bn",
       rating: "2",
       food: "Pizza",
       profile: "../muune copy.jpg",
