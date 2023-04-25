@@ -1,4 +1,5 @@
 import Star from "../star";
+import Materials from "./materials";
 
 const details = [
   {
@@ -47,6 +48,9 @@ const details = [
       { step: "Muuneeg zodon" },
       { step: "Muuneeg zodon" },
       { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
     ],
     profile:
       "https://yt3.googleusercontent.com/ytc/AGIKgqPXhVvsrFYuGYL1Drs9zt0nQYuuMaM1NyL_rOJVTQ=s176-c-k-c0x00ffffff-no-rj-mo",
@@ -59,8 +63,8 @@ export default function Steps() {
       {/* tutorial*/}
       <div className="w-[23%] flex justify-center py-4 fixed h-screen">
         <div className="absolute w-8 h-[30%] bg-primary -mt-8"></div>
-        <div className="w-[85%] bg-white px-8 py-10 rounded-[40px] z-10 flex drop-shadow-lg h-fit">
-          <div className="h-[80%] w-2 bg-gradient-to-b from-transparent via-primary to-transparent ml-2  absolute top-1/2 -translate-y-1/2"></div>
+        <div className="w-[85%] bg-white px-8 py-10 rounded-[40px] z-10 flex drop-shadow-lg h-fit overflow-y-auto max-h-[80vh]">
+          <div className="h-full w-2 bg-gradient-to-b from-transparent via-primary to-transparent ml-2  absolute top-1/2 -translate-y-1/2"></div>
           <div>
             {row.steps.map((alh, j) => (
               <div className="flex mb-2 items-center">
@@ -107,7 +111,21 @@ export default function Steps() {
 
       {/*food profile */}
 
-      <div></div>
+      <div className="ml-[23%] flex justify-center px-12 ">
+        {/*<div className="absolute grid grid-cols-2 gap-[33vw] -mt-8 z-0">
+          <div className="w-8 h-[80vh] bg-primary"></div>
+          <div className="w-8 h-[80vh] bg-primary"></div>
+                </div>*/}
+        <div className="w-[35%] rounded-t-full rounded-b-full overflow-hidden border-2 border-white drop-shadow-lg h-[60vh]">
+          <img
+            src={row.image}
+            className="object-cover object-center w-full h-full"
+          />
+        </div>
+        <div className="w-[50%]">
+          <Materials></Materials>
+        </div>
+      </div>
     </div>
   ));
 }
