@@ -12,11 +12,11 @@ export default function Navbar() {
 
           <div className="bg-white ml-1 h-12 grid-cols-6 w-[70%] rounded-3xl drop-shadow-lg gap-7 px-10 relative items-center justify-center xl:flex hidden ">
             <div className=" uppercase text-lg">Бүх жор</div>
-            <div className="  uppercase text-lg">Алдартай</div>
-            <div className=" uppercase text-lg">Махтай</div>
+            <div className="  uppercase text-lg">Трэнд</div>
+            <div className=" uppercase text-lg">Махан хоол</div>
             <div className=" uppercase text-lg">Эрүүл</div>
-            <div className="uppercase text-lg">Баярын</div>
-            <div className=" uppercase text-lg">Хуваалцах</div>
+            <div className="uppercase text-lg">Тэмдэглэлт</div>
+            <div className=" uppercase text-lg">Нийтийн</div>
           </div>
           <div className="bg-white h-12 w-32 rounded-r-full drop-shadow-lg mr-1 flex justify-center items-center hover:bg-slate-200 xl:hidden grid-cols-2 gap-5">
             <svg
