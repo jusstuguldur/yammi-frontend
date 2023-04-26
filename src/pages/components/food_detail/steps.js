@@ -96,7 +96,7 @@ export default function Steps() {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            stroke-width="1.5"
+            stroke-width="1.2"
             stroke="currentColor"
             class="w-6 h-6 mt-4 ml-8"
           >
@@ -113,8 +113,8 @@ export default function Steps() {
 
       <div className="ml-[23%] flex justify-center px-12 ">
         <div className="absolute grid grid-cols-2 gap-[33vw] -mt-8 z-0">
-          <div className="w-8 h-[80vh] bg-primary"></div>
-          <div className="w-8 h-[80vh] bg-primary"></div>
+          <div className="w-8 h-[150vh] bg-primary"></div>
+          <div className="w-8 h-[150vh] bg-primary"></div>
         </div>
         <div className="w-[35%] rounded-t-full rounded-b-full overflow-hidden border-2 border-white drop-shadow-lg h-[60vh]">
           <img
