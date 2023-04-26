@@ -23,7 +23,7 @@ const details = [
       { name: "Кетчуп", color: "#FF6678" },
     ],
     image:
-      "https://www.seriouseats.com/thmb/WzQz05gt5witRGeOYKTcTqfe1gs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/butter-basted-pan-seared-steaks-recipe-hero-06-03b1131c58524be2bd6c9851a2fbdbc3.jpg",
+      "https://natashaskitchen.com/wp-content/uploads/2020/03/Pan-Seared-Steak-4.jpg",
     rating: "3",
     status: "medium rare",
     steps: [
@@ -63,11 +63,11 @@ export default function Steps() {
       {/* tutorial*/}
       <div className="w-[23%] flex justify-center py-4 fixed h-screen">
         <div className="absolute w-8 h-[30%] bg-primary -mt-8"></div>
-        <div className="w-[85%] bg-white px-8 py-10 rounded-[40px] z-10 flex drop-shadow-lg h-fit overflow-y-auto max-h-[80vh]">
+        <div className="w-[85%] bg-white px-8 py-10 rounded-[40px] z-10 flex drop-shadow-lg h-fit overflow-y-auto max-h-[80vh] mt-8">
           <div className="h-full w-2 bg-gradient-to-b from-transparent via-primary to-transparent ml-2  absolute top-1/2 -translate-y-1/2"></div>
           <div>
             {row.steps.map((alh, j) => (
-              <div className="flex mb-2 items-center">
+              <div className="flex mb-4 items-center">
                 <div
                   className={
                     j >= 9
@@ -91,7 +91,7 @@ export default function Steps() {
           </div>
           <div className="font-pacifico text-4xl ml-28">{row.name}</div>
           <div className="mx-8 mt-4">{row.status}</div>
-          <Star value={row.rating} className="mt-4"></Star>
+          <Star value={row.rating} className="mt-4 mx-8"></Star>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -112,10 +112,10 @@ export default function Steps() {
       {/*food profile */}
 
       <div className="ml-[23%] flex justify-center px-12 ">
-        {/*<div className="absolute grid grid-cols-2 gap-[33vw] -mt-8 z-0">
+        <div className="absolute grid grid-cols-2 gap-[33vw] -mt-8 z-0">
           <div className="w-8 h-[80vh] bg-primary"></div>
           <div className="w-8 h-[80vh] bg-primary"></div>
-                </div>*/}
+        </div>
         <div className="w-[35%] rounded-t-full rounded-b-full overflow-hidden border-2 border-white drop-shadow-lg h-[60vh]">
           <img
             src={row.image}
