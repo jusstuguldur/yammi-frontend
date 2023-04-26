@@ -1,5 +1,6 @@
 import Star from "../star";
 import Materials from "./materials";
+import Video from "./video";
 
 const details = [
   {
@@ -10,17 +11,10 @@ const details = [
       { name: "Бяслаг", color: "#39dd00" },
       { name: "Хиам", color: "#FF5A50" },
       { name: "Давс", color: "#FF6678" },
-      { name: "Кетчуп", color: "#FF6678" },
       { name: "Гурил", color: "#FFB266" },
       { name: "Бяслаг", color: "#39dd00" },
       { name: "Хиам", color: "#FF5A50" },
       { name: "Давс", color: "#FF6678" },
-      { name: "Кетчуп", color: "#FF6678" },
-      { name: "Гурил", color: "#FFB266" },
-      { name: "Бяслаг", color: "#39dd00" },
-      { name: "Хиам", color: "#FF5A50" },
-      { name: "Давс", color: "#FF6678" },
-      { name: "Кетчуп", color: "#FF6678" },
     ],
     image:
       "https://natashaskitchen.com/wp-content/uploads/2020/03/Pan-Seared-Steak-4.jpg",
@@ -113,18 +107,38 @@ export default function Steps() {
 
       <div className="ml-[23%] flex justify-center px-12 ">
         <div className="absolute grid grid-cols-2 gap-[33vw] -mt-8 z-0">
-          <div className="w-8 h-[150vh] bg-primary"></div>
-          <div className="w-8 h-[150vh] bg-primary"></div>
+          <div className="w-8 h-[200vh] bg-primary"></div>
+          <div className="w-8 h-[200vh] bg-primary"></div>
         </div>
-        <div className="w-[35%] rounded-t-full rounded-b-full overflow-hidden border-2 border-white drop-shadow-lg h-[60vh]">
-          <img
-            src={row.image}
-            className="object-cover object-center w-full h-full"
-          />
+        <div className="flex-col justify-center">
+          <div className="rounded-t-full rounded-b-full overflow-hidden border-4 border-white drop-shadow-lg h-[60vh]">
+            <img
+              src={row.image}
+              className="object-cover object-center w-full h-full"
+            />
+          </div>
+          <div className="bg-white py-6 rounded-3xl overflow-hidden drop-shadow-lg mt-8 ">
+            <div className="h-8 w-full text-white bg-primary px-5 flex items-center text-base">
+              Илүү амттай болгоё гэвэл:
+            </div>
+            <div className="w-full px-4 grid grid-cols-3 gap-4 mt-4">
+              {row.materials.map((mat, j) => (
+                <div
+                  className="w-full py-2 text-white rounded-3xl flex justify-center px-4  drop-shadow-lg"
+                  style={{ backgroundColor: mat.color }}
+                >
+                  {mat.name}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
         <div className="w-[50%]">
           <Materials></Materials>
         </div>
+      </div>
+      <div className="ml-[23%]">
+        <Video></Video>
       </div>
     </div>
   ));

@@ -44,14 +44,17 @@ export default function Materials() {
           Материалууд:
         </div>
         <div className="w-full px-4 grid grid-cols-3 gap-4 mt-4">
-          {materials.map((row, i) => (
-            <div
-              className="w-full py-2 text-white rounded-3xl flex justify-center px-4  drop-shadow-lg"
-              style={{ backgroundColor: row.color }}
-            >
-              {row.name}
-            </div>
-          ))}
+          {materials
+            .sort((a, b) => (a.name < b.name ? 1 : -1))
+            .map((row, i) => (
+              <div
+                key={i}
+                className="w-full py-2 text-white rounded-3xl flex justify-center px-4  drop-shadow-lg"
+                style={{ backgroundColor: row.color }}
+              >
+                {row.name}
+              </div>
+            ))}
         </div>
       </div>
       <div className="p-4 bg-white drop-shadow-lg ml-40 mt-12 rounded-3xl overflow-hidden">
