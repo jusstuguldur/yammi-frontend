@@ -1,6 +1,6 @@
 import Star from "../star";
 import Materials from "./materials";
-import Video from "./video";
+import MyVideo from "./myvideo";
 
 const details = [
   {
@@ -138,7 +138,7 @@ export default function Steps() {
         </div>
       </div>
       <div className="ml-[23%]">
-        <Video></Video>
+        <MyVideo />
       </div>
     </div>
   ));

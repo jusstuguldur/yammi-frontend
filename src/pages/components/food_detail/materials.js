@@ -4,12 +4,12 @@ const materials = [
   { name: "Хиам", color: "#FF5A50" },
   { name: "Давс", color: "#FF6678" },
   { name: "Кетчуп", color: "#FF6678" },
-  { name: "Гурил", color: "#FFB266" },
+  { name: "Будаа", color: "#FFB266" },
   { name: "Бяслаг", color: "#39dd00" },
   { name: "Хиам", color: "#FF5A50" },
   { name: "Давс", color: "#FF6678" },
   { name: "Кетчуп", color: "#FF6678" },
-  { name: "Гурил", color: "#FFB266" },
+  { name: "Гоймон", color: "#FFB266" },
   { name: "Бяслаг", color: "#39dd00" },
   { name: "Хиам", color: "#FF5A50" },
   { name: "Давс", color: "#FF6678" },
@@ -59,7 +59,7 @@ export default function Materials() {
       </div>
       <div className="p-4 bg-white drop-shadow-lg ml-40 mt-12 rounded-3xl overflow-hidden">
         <div className="text-3xl mb-4">Онцлог:</div>
-        <div>
+        <div className="absolute right-1 -top-1 rotate-90">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="48"
