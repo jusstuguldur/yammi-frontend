@@ -37,7 +37,7 @@
 }
 
 .button {
-  background-color: #0070f3;
+  background-color: #8b3d09;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -47,5 +47,5 @@
 }
 
 .button:hover {
-  background-color: #0060c0;
+  background-color: #FF0000;
 }
