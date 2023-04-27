@@ -1,22 +1,5 @@
-import { useState } from "react";
-import Link from "next/link";
-export default function LoginPage() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleUsernameChange = (event) => {
-    setUsername(event.target.value);
-  };
-
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(`Username: ${username}, Password: ${password}`);
-  };
-
+import styles from "../styles/Login.module.css";
+export default function Login() {
   return (
     <div className="w-screen h-screen bg-beige flex justify-center items-center">
       <svg
@@ -42,29 +25,19 @@ export default function LoginPage() {
         ></path>
       </svg>
       <div className="bg-white w-[50%] h-[65%] drop-shadow-lg rounded-3xl">
-        <div>
-          <h1>Login</h1>
-          <form onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="username">Username:</label>
-              <input
-                type="text"
-                id="username"
-                value={username}
-                onChange={handleUsernameChange}
-              />
+        <div className={styles.container}>
+          <form className={styles.form}>
+            <h1 className={styles.title}>Login</h1>
+            <div className={styles.input}>
+              <label htmlFor="email">Email</label>
+              <input type="email" id="email" name="email" required />
             </div>
-            <div>
-              <label htmlFor="password">Password:</label>
-              <input
-                type="password"
-                id="password"
-                value={password}
-                onChange={handlePasswordChange}
-              />
+            <div className={styles.input}>
+              <label htmlFor="password">Password</label>
+              <input type="password" id="password" name="password" required />
             </div>
-            <button type="submit">
-              <Link href="/">Login</Link>
+            <button className={styles.button} type="submit">
+              Login
             </button>
           </form>
         </div>
