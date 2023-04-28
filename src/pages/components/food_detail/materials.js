@@ -19,20 +19,44 @@ const materials = [
 
 const benefits = [
   {
-    desc: "ci nmg hairlana ugeere",
+    desc: "ci nmg uyraana nudeere ",
   },
   {
     desc: "cmg bi hairlana zurheere",
   },
+  {
+    desc: "cny tald bi biyereee ",
+  },
 
   {
-    desc: "iim ym bnle tym bnle",
+    desc: "bodoj muruuddg setgeleeree",
   },
   {
-    desc: "iim ym bnle tym bnle",
+    desc: "tiim ym bnle",
   },
   {
-    desc: "gy ym bnle lovemble",
+    desc: "iim ym bnle ",
+  },
+  {
+    desc: "tiim ym bnle",
+  },
+  {
+    desc: "iim ym bnle ",
+  },
+  {
+    desc: "tiim ym bnle",
+  },
+  {
+    desc: "iim ym bnle ",
+  },
+  {
+    desc: "goymble lovemble",
+  },
+  {
+    desc: "tiim ym bnle",
+  },
+  {
+    desc: "iim ym bnle ",
   },
 ];
 

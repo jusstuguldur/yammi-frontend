@@ -14,7 +14,8 @@ export default function MyVideo() {
     ></iframe>,
   ];
   return (
-    <div className="w-full mt-8 py-16 flex justify-center">
+    <div className="w-full mt-8 py-16 flex justify-center items-center">
+      <div className="h-16 w-[60%] right-0 absolute bg-primary"></div>
       <div className="w-[65%] pt-4 pb-2 bg-white z-10 rounded-3xl flex justify-center drop-shadow-lg">
         <div>
           <div className="rounded-3xl overflow-hidden w-fit">
@@ -29,6 +30,9 @@ export default function MyVideo() {
             <div className="bg-gray-300 w-4 h-4 rounded-full "></div>
           </div>
         </div>
+      </div>
+      <div className="w-[65%] h-full absolute flex justify-center mt-24">
+        <div className="w-16 h-1/2 bg-primary absolute bottom-0"></div>
       </div>
     </div>
   );

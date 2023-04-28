@@ -1,6 +1,7 @@
 import Star from "../star";
 import Materials from "./materials";
 import MyVideo from "./myvideo";
+import { useEffect, useRef } from "react";
 
 const details = [
   {
@@ -31,16 +32,10 @@ const details = [
       { step: "Muuneeg zodon" },
       { step: "Muuneeg zodon" },
       { step: "Muuneeg zodon" },
+
       { step: "Muuneeg zodon" },
       { step: "Muuneeg zodon" },
-      { step: "Muuneeg zodon" },
-      { step: "Muuneeg zodon" },
-      { step: "Muuneeg zodon" },
-      { step: "Muuneeg zodon" },
-      { step: "Muuneeg zodon" },
-      { step: "Muuneeg zodon" },
-      { step: "Muuneeg zodon" },
-      { step: "Muuneeg zodon" },
+
       { step: "Muuneeg zodon" },
       { step: "Muuneeg zodon" },
       { step: "Muuneeg zodon" },
@@ -53,13 +48,13 @@ const details = [
 
 export default function Steps() {
   return details.map((row, i) => (
-    <div className="w-full">
+    <div className="w-full h-full" id="pag1">
       {/* tutorial*/}
       <div className="w-[23%] flex justify-center py-4 fixed h-screen">
         <div className="absolute w-8 h-[30%] bg-primary -mt-8"></div>
-        <div className="w-[85%] bg-white px-8 py-10 rounded-[40px] z-10 flex drop-shadow-lg h-fit overflow-y-auto max-h-[80vh] mt-8">
-          <div className="h-full w-2 bg-gradient-to-b from-transparent via-primary to-transparent ml-2  absolute top-1/2 -translate-y-1/2"></div>
-          <div>
+        <div className="w-[85%] bg-white py-10 rounded-[40px] z-10 flex drop-shadow-lg h-fit max-h-[80vh] mt-8 overflow-hidden">
+          <div className="h-[95%] w-2 bg-gradient-to-b from-transparent via-primary to-transparent ml-6 fixed top-1/2 -translate-y-1/2"></div>
+          <div className="overflow-y-auto w-full px-4">
             {row.steps.map((alh, j) => (
               <div className="flex mb-4 items-center">
                 <div
@@ -105,10 +100,10 @@ export default function Steps() {
 
       {/*food profile */}
 
-      <div className="ml-[23%] flex justify-center px-12 ">
-        <div className="absolute grid grid-cols-2 gap-[33vw] -mt-8 z-0">
-          <div className="w-8 h-[200vh] bg-primary"></div>
-          <div className="w-8 h-[200vh] bg-primary"></div>
+      <div className="ml-[23%] flex justify-center px-12">
+        <div className="absolute grid grid-cols-2 gap-[33vw] -mt-8 z-0 h-full">
+          <div className="w-8 h-[90%] bg-primary"></div>
+          <div className="w-8 h-[90%] bg-primary"></div>
         </div>
         <div className="flex-col justify-center">
           <div className="rounded-t-full rounded-b-full overflow-hidden border-4 border-white drop-shadow-lg h-[60vh]">
