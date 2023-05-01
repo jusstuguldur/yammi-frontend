@@ -18,9 +18,9 @@ export default function Interest() {
         </div>
         <div className="w-[45rem] h-64 rounded-r-full bg-white drop-shadow-lg -ml-16 flex justify-center py-10">
           <div className="">
-            <div className=" text-2xl font-bold text-center">Did you know?</div>
+            <div className=" text-2xl font-bold text-center">Та мэдэх үү?</div>
             <div className="text-2xl  px-12 text-center mt-4">
-              Potatoes were the first food planted in space.
+              Төмс бол анхны сансарт суулгасан ногоо юм.
             </div>
           </div>
         </div>

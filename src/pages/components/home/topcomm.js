@@ -70,7 +70,7 @@ export default function Topcomment() {
             <div className="w-full mt-8 h-28">{row.comment}</div>
             <div className="w-full flex justify-center">
               <div className="bg-primary text-white w-40 h-10 rounded-3xl flex items-center justify-center">
-                Try
+                <Link href="/details">Try</Link>
               </div>
             </div>
             <div className=" text-gray-500 text-sm mt-8">

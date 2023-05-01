@@ -14,7 +14,7 @@ export default function MyVideo() {
     ></iframe>,
   ];
   return (
-    <div className="w-full mt-8 py-16 flex justify-center items-center">
+    <div className="w-full py-16 flex justify-center items-center">
       <div className="h-16 w-[60%] right-0 absolute bg-primary"></div>
       <div className="w-[65%] pt-4 pb-2 bg-white z-10 rounded-3xl flex justify-center drop-shadow-lg">
         <div>

@@ -30,7 +30,7 @@ export default function Hero() {
       duration: "30m",
       desc: "Lorem ipsum",
       background:
-        "https://cdn.sunbasket.com/7912dde9-18c7-46d7-8cfe-e935cabbff55.jpeg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/2c/Cujwan.JPG",
     },
     {
       name: "Хуушуур",

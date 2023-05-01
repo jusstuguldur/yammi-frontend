@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="w-full mt-36 relative pb-36">
+    <div className="w-full bottom-0 mt-24 relative pb-[30vh]">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"

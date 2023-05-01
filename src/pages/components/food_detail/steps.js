@@ -48,9 +48,9 @@ const details = [
 
 export default function Steps() {
   return details.map((row, i) => (
-    <div className="w-full h-full" id="pag1">
+    <div className="w-full relative h-full bg-black" id="pag1">
       {/* tutorial*/}
-      <div className="w-[23%] flex justify-center py-4 fixed h-screen">
+      <div className="w-[23%] flex justify-center py-4 sticky h-screen bottom-0 z-10">
         <div className="absolute w-8 h-[30%] bg-primary -mt-8"></div>
         <div className="w-[85%] bg-white py-10 rounded-[40px] z-10 flex drop-shadow-lg h-fit max-h-[80vh] mt-8 overflow-hidden">
           <div className="h-[95%] w-2 bg-gradient-to-b from-transparent via-primary to-transparent ml-6 fixed top-1/2 -translate-y-1/2"></div>
@@ -73,7 +73,7 @@ export default function Steps() {
         </div>
       </div>
       {/*name status etc */}
-      <div className="w-[77%] py-8 ml-[23%] flex justify-center">
+      <div className="w-[77%] py-8 ml-[23%] flex justify-center top-0">
         <div className="w-[80%] py-4 rounded-3xl bg-white drop-shadow-lg flex items-center px-4 justify-center">
           <div className="w-20 h-20 rounded-full border-2 border-white drop-shadow-lg overflow-hidden absolute left-0 translate-x-1/2">
             <img src={row.profile} className="object-center object-cover" />
