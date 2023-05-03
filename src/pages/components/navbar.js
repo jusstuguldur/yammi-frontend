@@ -76,7 +76,7 @@ export default function Navbar() {
             </svg>
           </Link>
 
-          <div className="bg-primary w-28 h-10 rounded-full drop-shadow-lg flex items-center justify-center text-white">
+          <div className="bg-primary w-28 h-10 rounded-full drop-shadow-lg flex items-center justify-center text-white hover:bg-red-500">
             <Link href="/login" legacyBehavior>
               Нэвтрэх
             </Link>
@@ -98,11 +98,11 @@ export default function Navbar() {
             />
           </svg>
 
-          <div className="bg-primary w-20 h-10 rounded-full drop-shadow-lg flex items-center justify-center text-white">
-            <Link href="/login" legacyBehavior>
+          <Link href="/login">
+            <div className="bg-primary w-20 h-10 rounded-full drop-shadow-lg flex items-center justify-center text-white ">
               Нэвтрэх
-            </Link>
-          </div>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

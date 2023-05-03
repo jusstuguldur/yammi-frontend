@@ -16,7 +16,7 @@ export default function MyVideo() {
   return (
     <div className="w-full py-16 flex justify-center items-center">
       <div className="h-16 w-[60%] right-0 absolute bg-primary"></div>
-      <div className="w-[65%] pt-4 pb-2 bg-white z-10 rounded-3xl flex justify-center drop-shadow-lg">
+      <div className="w-[80%] pt-4 pb-2 bg-white z-10 rounded-3xl flex justify-center drop-shadow-lg">
         <div>
           <div className="rounded-3xl overflow-hidden w-fit">
             {/* {videos.map((vid) => (

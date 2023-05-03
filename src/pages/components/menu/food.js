@@ -120,7 +120,9 @@ export default function Food() {
                 <div className="font-semibold text-xs">{row.channel}</div>
               </div>
               <div className=" w-1/2 flex mt-2 items-center">
-                <div className="font-pacifico mr-2 text-3xl">{row.name}</div>
+                <div className="font-pacifico mr-2 text-3xl first-letter:uppercase">
+                  {row.name}
+                </div>
                 <div className="mt-3">({row.status})</div>
               </div>
               <div className="w-full flex justify-center">
@@ -129,7 +131,7 @@ export default function Food() {
               <div className="w-full text-center mt-2">{row.duration}</div>
             </div>
           </div>
-          <div className="w-full  text-center mt-4">{row.desc}</div>
+          <div className="w-full  text-center mt-4 break-all">{row.desc}</div>
           <Link href="/details">
             <div className="w-[80%] py-2 bg-primary text-white text-center rounded-3xl ml-[10%] mt-4">
               Үргэлжлүүлэх

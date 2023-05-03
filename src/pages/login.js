@@ -56,9 +56,11 @@ export default function Login() {
           <div className="">Forgot Password?</div>
         </div>
         <div className="flex justify-center mt-4">
-          <div className="flex justify-center items-center px-24 py-2 bg-primary rounded-2xl text-white w-fit text-lg mt-4">
-            <Link href="/">Нэвтрэх</Link>
-          </div>
+          <Link href="/">
+            <div className="flex justify-center items-center px-24 py-2 bg-primary rounded-2xl text-white w-fit text-lg mt-4 hover:bg-red-500">
+              Нэвтрэх
+            </div>
+          </Link>
         </div>
 
         <div className="flex justify-center w-full mt-8 items-center">

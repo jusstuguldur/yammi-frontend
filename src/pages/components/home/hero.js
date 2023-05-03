@@ -143,11 +143,11 @@ export default function Hero() {
               {row.desc}
             </div>
 
-            <div className="w-full py-2 bg-primary rounded-full drop-shadow-lg flex justify-center items-center text-white">
-              <Link href="/details" legacyBehavior className="">
+            <Link href="/details">
+              <div className="w-full py-2 bg-primary rounded-full drop-shadow-lg flex justify-center items-center text-white hover:bg-red-500">
                 Үргэлжлүүлэх
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         ))}
 

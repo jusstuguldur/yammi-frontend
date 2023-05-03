@@ -1,17 +1,13 @@
+import Steps from "./components/food_details/steps2";
 import Navbar from "./components/navbar";
-import Steps from "./components/food_detail/steps";
-import Rating from "./components/food_detail/rating";
-import Comments from "./components/food_detail/comments";
+import Comments from "./components/food_details/comments";
 
-export default function Details() {
+export default function Details2() {
   return (
-    <>
-      <div className="w-screen bg-beige">
-        <Navbar></Navbar>
-        <Steps></Steps>
-        <Rating></Rating>
-        <Comments></Comments>
-      </div>
-    </>
+    <div className="w-full bg-beige">
+      <Navbar></Navbar>
+      <Steps></Steps>
+      <Comments></Comments>
+    </div>
   );
 }

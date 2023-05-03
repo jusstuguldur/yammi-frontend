@@ -62,8 +62,8 @@ const benefits = [
 
 export default function Materials() {
   return (
-    <div className="w-full py-4 justify-center">
-      <div className="bg-white py-6 rounded-3xl overflow-hidden drop-shadow-lg ml-40">
+    <div className="w-full py-4 justify-center px-12">
+      <div className="bg-white py-6 rounded-3xl overflow-hidden drop-shadow-lg">
         <div className="h-8 w-full text-white bg-primary px-5 flex items-center text-lg">
           Материалууд:
         </div>
@@ -81,7 +81,7 @@ export default function Materials() {
             ))}
         </div>
       </div>
-      <div className="p-4 bg-white drop-shadow-lg ml-40 mt-12 rounded-3xl overflow-hidden">
+      <div className="p-4 bg-white drop-shadow-lg mt-12 rounded-3xl overflow-hidden">
         <div className="text-3xl mb-4">Онцлог:</div>
         <div className="absolute right-1 -top-1 rotate-90">
           <svg
