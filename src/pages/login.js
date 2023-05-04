@@ -27,6 +27,7 @@ export default function Login() {
       </svg>
 
       {/*Login section */}
+      
 
       <div className="p-8 bg-white drop-shadow-lg rounded-3xl">
         <div className="font-pacifico text-5xl p-4 drop-shadow-lg rounded-3xl -translate-y-1/2 -mt-8 bg-white flex justify-center">
@@ -62,7 +63,6 @@ export default function Login() {
             </div>
           </Link>
         </div>
-
         <div className="flex justify-center w-full mt-8 items-center">
           <div className="h-[2px] w-[20%] bg-gray-400 rounded-sm mr-2"></div>
           <div className="h-[2px] w-[20%] bg-gray-400 rounded-sm"></div>
