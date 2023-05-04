@@ -30,7 +30,7 @@ export default function ForYou() {
                 <img
                   src={row.image}
                   className={`w-[49.85%] h-full object-cover object-center ${
-                    i % 2 == 1 ? "w-[46.8%]" : ""
+                    i % 2 == 1 ? "w-[47%]" : ""
                   }`}
                 />
                 <div

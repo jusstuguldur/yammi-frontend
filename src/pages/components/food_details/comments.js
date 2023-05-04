@@ -81,7 +81,7 @@ export default function Comments() {
             className="w-[93%] p-4 bg-gray-200 rounded-l-xl resize-none break-words"
             placeholder="Write comment..."
           ></input>
-          <button className="bg-primary h-fill w-[7%] flex justify-center items-center ">
+          <button className="bg-primary h-fill w-[7%] flex justify-center items-center hover:bg-red-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

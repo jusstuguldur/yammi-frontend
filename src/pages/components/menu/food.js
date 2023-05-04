@@ -254,7 +254,7 @@ export default function Food() {
           </div>
           <div className="w-full  text-center mt-4 break-all">{row.desc}</div>
           <Link href="/details">
-            <div className="w-[80%] py-2 bg-primary text-white text-center rounded-3xl ml-[10%] mt-4">
+            <div className="w-[80%] py-2 bg-primary text-white text-center rounded-3xl ml-[10%] mt-4 hover:bg-red-600">
               Үргэлжлүүлэх
             </div>
           </Link>
