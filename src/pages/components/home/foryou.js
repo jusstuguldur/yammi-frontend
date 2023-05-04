@@ -29,13 +29,13 @@ export default function ForYou() {
               <div className=" w-[80%] h-96 bg-white rounded-3xl drop-shadow-lg overflow-hidden flex mb-8 justify-between">
                 <img
                   src={row.image}
-                  className={`w-[49.85%] h-full object-cover object-center ${
-                    i % 2 == 1 ? "w-[47%]" : ""
+                  className={`w-1/2 h-full object-cover object-center ${
+                    i % 2 == 1 ? "w-1/2" : ""
                   }`}
                 />
                 <div
-                  className={`w-[50%] h-full px-8 py-4 ${
-                    i % 2 == 0 ? "" : "-order-1"
+                  className={`w-1/2 h-full px-8 py-4 ${
+                    i % 2 == 0 ? "" : "-order-1 w-1/2"
                   }`}
                 >
                   <div className="w-full uppercase">collection</div>

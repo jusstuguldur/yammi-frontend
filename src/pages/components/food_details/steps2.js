@@ -67,6 +67,7 @@ export default function Steps() {
     <div className="w-full  flex px-12 relative py-4">
       <div className="w-[20%] flex justify-center">
         <div className="bg-white w-full rounded-3xl py-4 sticky top-16 mb-10 h-fit max-h-[85vh] overflow-auto px-2 drop-shadow-lg">
+          <div className="w-1 h-full absolute bg-gradient-to-b from-transparent via-primary to-transparent"></div>
           {row.steps.map((alh, j) => (
             <div className="flex mb-4 items-center ml-4 z-10">
               <div
