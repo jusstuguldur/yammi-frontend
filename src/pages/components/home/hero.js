@@ -61,7 +61,7 @@ export default function Hero() {
         "https://carmyy.com/wp-content/uploads/2022/04/Spicy-Pork-Stir-Fry-6.jpg",
     },
     {
-      name: "Fries",
+      name: "Шарсан төмс",
       materials: [
         { name: "Гурил", color: "#FFB266" },
         { name: "Бяслаг", color: "#39dd00" },

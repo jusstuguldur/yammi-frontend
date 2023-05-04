@@ -85,7 +85,8 @@ export default function Steps() {
               viewBox="0 0 24 24"
               stroke-width="1.2"
               stroke="currentColor"
-              class="w-6 h-6 mt-4 ml-8"
+              class={`w-6 h-6 mt-4 ml-8`}
+              onClick="strokeColor"
             >
               <path
                 stroke-linecap="round"
@@ -97,7 +98,7 @@ export default function Steps() {
           <div className="w-full flex mt-8">
             <div className="w-1/2 p-4 ">
               <div className="w-full rounded-full h-[60vh] border-4 border-white drop-shadow-lg overflow-hidden">
-                <img src={row.image} />
+                <img src={row.image} className="object-center object-cover" />
               </div>
               <div className="px-8">
                 <div className="bg-white py-6 rounded-3xl overflow-hidden drop-shadow-lg mt-8 ">
