@@ -42,6 +42,20 @@ const details = [
       { step: "Muuneeg zodon" },
       { step: "Muuneeg zodon" },
       { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
+      { step: "Muuneeg zodon" },
     ],
     profile:
       "https://yt3.googleusercontent.com/ytc/AGIKgqPXhVvsrFYuGYL1Drs9zt0nQYuuMaM1NyL_rOJVTQ=s176-c-k-c0x00ffffff-no-rj-mo",
@@ -54,7 +68,7 @@ export default function Steps() {
       <div className="w-[20%] flex justify-center">
         <div className="bg-white w-full rounded-3xl py-4 sticky top-16 mb-10 h-fit max-h-[85vh] overflow-auto px-2 drop-shadow-lg">
           {row.steps.map((alh, j) => (
-            <div className="flex mb-4 items-center ml-4">
+            <div className="flex mb-4 items-center ml-4 z-10">
               <div
                 className={
                   j >= 9
@@ -96,7 +110,10 @@ export default function Steps() {
             </svg>
           </div>
           <div className="w-full flex mt-8">
-            <div className="w-1/2 p-4 ">
+            <div className="w-1/2 p-4 relative">
+              <div className="w-full h-full absolute flex justify-center">
+                <div className="w-8 h-[60%] bg-primary -mt-12"></div>
+              </div>
               <div className="w-full rounded-full h-[60vh] border-4 border-white drop-shadow-lg overflow-hidden">
                 <img src={row.image} className="object-center object-cover" />
               </div>
@@ -118,7 +135,10 @@ export default function Steps() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 py-4 ">
+            <div className="w-1/2 py-4 relative">
+              <div className="w-full h-full absolute flex justify-center">
+                <div className="w-8 h-full bg-primary -mt-12"></div>
+              </div>
               <Materials></Materials>
             </div>
           </div>

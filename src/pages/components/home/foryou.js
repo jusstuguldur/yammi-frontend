@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const foryou = [
   {
     value: 69,
@@ -23,25 +25,27 @@ export default function ForYou() {
         <div className="w-8 h-[1100px] bg-primary absolute z-0 "></div>
         <div className="z-10 w-full pl-[15%]">
           {foryou.map((row, i) => (
-            <div className=" w-[80%] h-96 bg-white rounded-3xl drop-shadow-lg overflow-hidden flex mb-8 justify-between">
-              <img
-                src={row.image}
-                className={`w-[49.85%] h-full object-cover object-center ${
-                  i % 2 == 1 ? "w-[46.9%]" : ""
-                }`}
-              />
-              <div
-                className={`w-[50.15%] h-full px-8 py-4 ${
-                  i % 2 == 0 ? "" : "-order-1"
-                }`}
-              >
-                <div className="w-full uppercase">collection</div>
-                <div className="uppercase text-2xl mt-4 font-semibold">
-                  {row.value} best {row.category} foods recipes
+            <Link href="/menu">
+              <div className=" w-[80%] h-96 bg-white rounded-3xl drop-shadow-lg overflow-hidden flex mb-8 justify-between">
+                <img
+                  src={row.image}
+                  className={`w-[49.85%] h-full object-cover object-center ${
+                    i % 2 == 1 ? "w-[46.8%]" : ""
+                  }`}
+                />
+                <div
+                  className={`w-[50%] h-full px-8 py-4 ${
+                    i % 2 == 0 ? "" : "-order-1"
+                  }`}
+                >
+                  <div className="w-full uppercase">collection</div>
+                  <div className="uppercase text-2xl mt-4 font-semibold">
+                    {row.value} best {row.category} foods recipes
+                  </div>
+                  <div className="mt-4">{row.desc}</div>
                 </div>
-                <div className="mt-4">{row.desc}</div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

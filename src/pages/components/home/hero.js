@@ -87,7 +87,7 @@ export default function Hero() {
       <div className="w-full justify-center items-center grid grid-cols-5 gap-2 px-24 relative">
         <div className="w-full h-60 absolute top-1/2 -translate-y-1/2 bg-primary"></div>
         <div className="w-20 h-full flex justify-end items-center absolute">
-          <div className="rounded-full w-10 h-10 bg-slate-300 z-10 flex justify-center items-center mr-2">
+          <div className="rounded-full w-10 h-10 bg-slate-300 z-10 flex justify-center items-center mr-2 hover:bg-slate-400">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -152,7 +152,7 @@ export default function Hero() {
         ))}
 
         <div className="w-20 h-full flex justify-start items-center absolute right-0 ">
-          <div className="rounded-full w-10 h-10 bg-slate-300 z-10 flex justify-center items-center ml-2">
+          <div className="rounded-full w-10 h-10 bg-slate-300 z-10 flex justify-center items-center ml-2 hover:bg-slate-400">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

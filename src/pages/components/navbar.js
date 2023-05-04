@@ -19,6 +19,9 @@ const navbar = [
   {
     name: "Нийтийн",
   },
+  {
+    name: "Амттан",
+  },
 ];
 
 export default function Navbar() {
@@ -28,14 +31,14 @@ export default function Navbar() {
       <div className="w-full h-8 bg-primary absolute"></div>
       <div className="w-full z-10 flex  items-center justify-between">
         <div className="flex w-[75%]">
-          <div className="font-pacifico bg-white w-32 h-12 items-center justify-center text-3xl rounded-3xl ml-24 drop-shadow-lg hover:bg-pink-100 xl:flex hidden">
+          <div className="font-pacifico bg-white w-32 h-12 items-center justify-center text-3xl rounded-3xl ml-24 drop-shadow-lg hover:bg-slate-200 xl:flex hidden">
             <Link href="/">Yammi</Link>
           </div>
 
           <div className="bg-white ml-1 h-12 grid-cols-6 w-[70%] rounded-3xl drop-shadow-lg gap-6 px-10 relative items-center justify-center xl:flex hidden ">
             {navbar.map((row, i) => (
               <Link href="/menu">
-                <div className="uppercase text-base hover:text-primary">
+                <div className="uppercase text-sm hover:text-primary">
                   {row.name}
                 </div>
               </Link>

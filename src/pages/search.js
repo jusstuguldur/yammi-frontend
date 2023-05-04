@@ -109,58 +109,6 @@ const ingeredients = [
     name: "Гурил",
     color: "#FFB266",
   },
-  {
-    name: "Бяслаг",
-    color: "#39dd00",
-  },
-  { name: "Хиам", color: "#FF5A50" },
-  { name: "Давс", color: "#FF6678" },
-  {
-    name: "Гурил",
-    color: "#FFB266",
-  },
-  {
-    name: "Бяслаг",
-    color: "#39dd00",
-  },
-  { name: "Хиам", color: "#FF5A50" },
-  { name: "Давс", color: "#FF6678" },
-  {
-    name: "Гурил",
-    color: "#FFB266",
-  },
-  {
-    name: "Бяслаг",
-    color: "#39dd00",
-  },
-  { name: "Хиам", color: "#FF5A50" },
-  { name: "Давс", color: "#FF6678" },
-  {
-    name: "Гурил",
-    color: "#FFB266",
-  },
-  {
-    name: "Бяслаг",
-    color: "#39dd00",
-  },
-  { name: "Хиам", color: "#FF5A50" },
-  { name: "Давс", color: "#FF6678" },
-  {
-    name: "Бяслаг",
-    color: "#39dd00",
-  },
-  { name: "Хиам", color: "#FF5A50" },
-  { name: "Давс", color: "#FF6678" },
-  {
-    name: "Гурил",
-    color: "#FFB266",
-  },
-  {
-    name: "Бяслаг",
-    color: "#39dd00",
-  },
-  { name: "Хиам", color: "#FF5A50" },
-  { name: "Давс", color: "#FF6678" },
 ];
 const searches = [
   {
@@ -225,7 +173,7 @@ export default function Search() {
   return (
     <div className="bg-beige">
       <Navbar></Navbar>
-      <div className="mt-8 ml-24 flex items-center gap-x-4 ju">
+      <div className="mt-8 ml-24 flex items-center gap-x-4 justify-center">
         <input
           className="w-1/2 px-4 py-2 bg-slate-200 rounded-2xl drop-shadow-lg border-2 border-white"
           placeholder="Танд ямар материал байна?"
