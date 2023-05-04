@@ -1,6 +1,7 @@
 import Steps from "./components/food_details/steps2";
 import Navbar from "./components/navbar";
 import Comments from "./components/food_details/comments";
+import Footer from "./components/footer";
 
 export default function Details2() {
   return (
@@ -8,6 +9,7 @@ export default function Details2() {
       <Navbar></Navbar>
       <Steps></Steps>
       <Comments></Comments>
+      <Footer></Footer>
     </div>
   );
 }

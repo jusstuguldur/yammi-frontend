@@ -100,6 +100,127 @@ const menu = [
     duration: "40mins",
     desc: "a;sldkfjdsa;lkfjsal;kfjoilgbrw;naeoivdfjba;dshlasldkfjsaldk;fjkljsaflkasdjflknv",
   },
+  {
+    name: "Pizza",
+    value: "4",
+    image:
+      "https://www.simplyrecipes.com/thmb/I4razizFmeF8ua2jwuD0Pq4XpP8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg",
+    channel: "ARTGER",
+    profile:
+      "https://yt3.googleusercontent.com/ytc/AGIKgqPXhVvsrFYuGYL1Drs9zt0nQYuuMaM1NyL_rOJVTQ=s176-c-k-c0x00ffffff-no-rj-mo",
+    status: "pepperoni",
+    duration: "40mins",
+    desc: "a;sldkfjdsa;lkfjsal;kfjoilgbrw;naeoivdfjba;dshlasldkfjsaldk;fjkljsaflkasdjflknv",
+  },
+  {
+    name: "Pizza",
+    value: "4",
+    image:
+      "https://www.simplyrecipes.com/thmb/I4razizFmeF8ua2jwuD0Pq4XpP8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg",
+    channel: "ARTGER",
+    profile:
+      "https://yt3.googleusercontent.com/ytc/AGIKgqPXhVvsrFYuGYL1Drs9zt0nQYuuMaM1NyL_rOJVTQ=s176-c-k-c0x00ffffff-no-rj-mo",
+    status: "pepperoni",
+    duration: "40mins",
+    desc: "a;sldkfjdsa;lkfjsal;kfjoilgbrw;naeoivdfjba;dshlasldkfjsaldk;fjkljsaflkasdjflknv",
+  },
+
+  {
+    name: "Pizza",
+    value: "4",
+    image:
+      "https://www.simplyrecipes.com/thmb/I4razizFmeF8ua2jwuD0Pq4XpP8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg",
+    channel: "ARTGER",
+    profile:
+      "https://yt3.googleusercontent.com/ytc/AGIKgqPXhVvsrFYuGYL1Drs9zt0nQYuuMaM1NyL_rOJVTQ=s176-c-k-c0x00ffffff-no-rj-mo",
+    status: "pepperoni",
+    duration: "40mins",
+    desc: "a;sldkfjdsa;lkfjsal;kfjoilgbrw;naeoivdfjba;dshlasldkfjsaldk;fjkljsaflkasdjflknv",
+  },
+  {
+    name: "Pizza",
+    value: "4",
+    image:
+      "https://www.simplyrecipes.com/thmb/I4razizFmeF8ua2jwuD0Pq4XpP8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg",
+    channel: "ARTGER",
+    profile:
+      "https://yt3.googleusercontent.com/ytc/AGIKgqPXhVvsrFYuGYL1Drs9zt0nQYuuMaM1NyL_rOJVTQ=s176-c-k-c0x00ffffff-no-rj-mo",
+    status: "pepperoni",
+    duration: "40mins",
+    desc: "a;sldkfjdsa;lkfjsal;kfjoilgbrw;naeoivdfjba;dshlasldkfjsaldk;fjkljsaflkasdjflknv",
+  },
+  {
+    name: "Pizza",
+    value: "4",
+    image:
+      "https://www.simplyrecipes.com/thmb/I4razizFmeF8ua2jwuD0Pq4XpP8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg",
+    channel: "ARTGER",
+    profile:
+      "https://yt3.googleusercontent.com/ytc/AGIKgqPXhVvsrFYuGYL1Drs9zt0nQYuuMaM1NyL_rOJVTQ=s176-c-k-c0x00ffffff-no-rj-mo",
+    status: "pepperoni",
+    duration: "40mins",
+    desc: "a;sldkfjdsa;lkfjsal;kfjoilgbrw;naeoivdfjba;dshlasldkfjsaldk;fjkljsaflkasdjflknv",
+  },
+  {
+    name: "Pizza",
+    value: "4",
+    image:
+      "https://www.simplyrecipes.com/thmb/I4razizFmeF8ua2jwuD0Pq4XpP8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg",
+    channel: "ARTGER",
+    profile:
+      "https://yt3.googleusercontent.com/ytc/AGIKgqPXhVvsrFYuGYL1Drs9zt0nQYuuMaM1NyL_rOJVTQ=s176-c-k-c0x00ffffff-no-rj-mo",
+    status: "pepperoni",
+    duration: "40mins",
+    desc: "a;sldkfjdsa;lkfjsal;kfjoilgbrw;naeoivdfjba;dshlasldkfjsaldk;fjkljsaflkasdjflknv",
+  },
+  {
+    name: "Pizza",
+    value: "4",
+    image:
+      "https://www.simplyrecipes.com/thmb/I4razizFmeF8ua2jwuD0Pq4XpP8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg",
+    channel: "ARTGER",
+    profile:
+      "https://yt3.googleusercontent.com/ytc/AGIKgqPXhVvsrFYuGYL1Drs9zt0nQYuuMaM1NyL_rOJVTQ=s176-c-k-c0x00ffffff-no-rj-mo",
+    status: "pepperoni",
+    duration: "40mins",
+    desc: "a;sldkfjdsa;lkfjsal;kfjoilgbrw;naeoivdfjba;dshlasldkfjsaldk;fjkljsaflkasdjflknv",
+  },
+  {
+    name: "Pizza",
+    value: "4",
+    image:
+      "https://www.simplyrecipes.com/thmb/I4razizFmeF8ua2jwuD0Pq4XpP8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg",
+    channel: "ARTGER",
+    profile:
+      "https://yt3.googleusercontent.com/ytc/AGIKgqPXhVvsrFYuGYL1Drs9zt0nQYuuMaM1NyL_rOJVTQ=s176-c-k-c0x00ffffff-no-rj-mo",
+    status: "pepperoni",
+    duration: "40mins",
+    desc: "a;sldkfjdsa;lkfjsal;kfjoilgbrw;naeoivdfjba;dshlasldkfjsaldk;fjkljsaflkasdjflknv",
+  },
+  {
+    name: "Pizza",
+    value: "4",
+    image:
+      "https://www.simplyrecipes.com/thmb/I4razizFmeF8ua2jwuD0Pq4XpP8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg",
+    channel: "ARTGER",
+    profile:
+      "https://yt3.googleusercontent.com/ytc/AGIKgqPXhVvsrFYuGYL1Drs9zt0nQYuuMaM1NyL_rOJVTQ=s176-c-k-c0x00ffffff-no-rj-mo",
+    status: "pepperoni",
+    duration: "40mins",
+    desc: "a;sldkfjdsa;lkfjsal;kfjoilgbrw;naeoivdfjba;dshlasldkfjsaldk;fjkljsaflkasdjflknv",
+  },
+  {
+    name: "Pizza",
+    value: "4",
+    image:
+      "https://www.simplyrecipes.com/thmb/I4razizFmeF8ua2jwuD0Pq4XpP8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-4-82c60893fcad4ade906a8a9f59b8da9d.jpg",
+    channel: "ARTGER",
+    profile:
+      "https://yt3.googleusercontent.com/ytc/AGIKgqPXhVvsrFYuGYL1Drs9zt0nQYuuMaM1NyL_rOJVTQ=s176-c-k-c0x00ffffff-no-rj-mo",
+    status: "pepperoni",
+    duration: "40mins",
+    desc: "a;sldkfjdsa;lkfjsal;kfjoilgbrw;naeoivdfjba;dshlasldkfjsaldk;fjkljsaflkasdjflknv",
+  },
 ];
 
 export default function Food() {

@@ -124,7 +124,6 @@ export default function Steps() {
           </div>
           <div className="flex-col justify-center w-full">
             <MyVideo></MyVideo>
-            <Rating></Rating>
           </div>
         </div>
       </div>
