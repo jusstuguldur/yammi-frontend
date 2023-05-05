@@ -3,7 +3,7 @@ import Materials from "./materials";
 import MyVideo from "./myvideo";
 import Rating from "./rating";
 
-export default function Steps({ food, steps }) {
+export default function Steps({ food, steps, materials }) {
   return (
     <div className="w-full  flex px-12 relative py-4">
       {food ? (
@@ -71,7 +71,7 @@ export default function Steps({ food, steps }) {
                   <div className="w-full h-full absolute flex justify-center">
                     <div className="w-8 h-1/2 bg-primary -mt-12"></div>
                   </div>
-                  <Materials></Materials>
+                  <Materials materials={materials}></Materials>
                 </div>
               </div>
               <div className="flex-col justify-center w-full">

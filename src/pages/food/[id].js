@@ -11,7 +11,7 @@ export default function Details2() {
 
   const [food, setFood] = useState({});
   const [steps, setSteps] = useState([]);
-  const [materials, setMaterial] = useState([]);
+  const [materials, setMaterials] = useState([]);
 
   function getData() {
     if (!id) return;
@@ -20,15 +20,7 @@ export default function Details2() {
       .then((result) => {
         setFood(result.data);
         setSteps(result.steps);
-      });
-  }
-
-  function getData() {
-    if (!id) return;
-    fetch(`${process.env.API_URL}/api.food?id=${id}`)
-      .then((response) => response.json())
-      .then((result) => {
-        setMaterial(result.material);
+        setMaterials(result.materials);
       });
   }
 
@@ -37,7 +29,7 @@ export default function Details2() {
   return (
     <div className="w-full bg-beige">
       <Navbar></Navbar>
-      <Steps food={food} steps={steps}></Steps>
+      <Steps food={food} steps={steps} materials={materials}></Steps>
       <Comments></Comments>
       <Footer></Footer>
     </div>

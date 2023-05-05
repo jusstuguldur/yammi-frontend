@@ -2,16 +2,16 @@ import Link from "next/link";
 
 const foryou = [
   {
-    value: 69,
+    value: 5,
     desc: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum ",
-    category: "meat",
+    category: "Европ хоол",
     image:
       "https://admin.acceleratingscience.com/food/wp-content/uploads/sites/5/2020/10/istock-694177316_varietycookedmeats-1.jpg",
   },
   {
-    value: 69,
+    value: 3,
     desc: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum ",
-    category: "healthy",
+    category: "Монгол хоол",
     image:
       "https://www.eatthis.com/wp-content/uploads/sites/4/2021/05/healthy-foods.jpg?quality=82&strip=",
   },
@@ -25,7 +25,7 @@ export default function ForYou() {
         <div className="w-8 h-[1100px] bg-primary absolute z-0 "></div>
         <div className="z-10 w-full pl-[15%]">
           {foryou.map((row, i) => (
-            <Link href="/menu" key={i}>
+            <Link href="/category/" key={i}>
               <div className=" w-[80%] h-96 bg-white rounded-3xl drop-shadow-lg overflow-hidden flex mb-8 justify-between">
                 <img
                   src={row.image}
