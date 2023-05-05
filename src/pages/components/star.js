@@ -98,10 +98,10 @@ export default function Star({ value, setValue, disabled = false, className }) {
   return (
     <div className={"flex gap-1/2 " + className}>
       {value && value > 0
-        ? [...Array(5).keys()].map((row) => (
+        ? [...Array(5).keys()].map((row, i) => (
             <button
+              key={i}
               disabled={disabled}
-              key={row}
               onClick={() => setValue(row + 1)}
             >
               <>{calculateStar(row + 1, value)}</>

@@ -25,7 +25,7 @@ export default function ForYou() {
         <div className="w-8 h-[1100px] bg-primary absolute z-0 "></div>
         <div className="z-10 w-full pl-[15%]">
           {foryou.map((row, i) => (
-            <Link href="/menu">
+            <Link href="/menu" key={i}>
               <div className=" w-[80%] h-96 bg-white rounded-3xl drop-shadow-lg overflow-hidden flex mb-8 justify-between">
                 <img
                   src={row.image}

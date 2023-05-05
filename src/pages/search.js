@@ -204,6 +204,7 @@ export default function Search() {
           <div className="grid grid-cols-10 px-12 gap-4 p-4">
             {ingeredients.map((mat, j) => (
               <div
+                key={j}
                 className="w-full py-1 drop-shadow-lg text-center rounded-3xl text-white"
                 style={{ backgroundColor: mat.color }}
               >
@@ -217,6 +218,7 @@ export default function Search() {
           <div className="grid grid-cols-10 px-12 gap-4 p-4">
             {searches.map((ser, j) => (
               <div
+                key={j}
                 className="w-full py-1 drop-shadow-lg text-center rounded-3xl text-white"
                 style={{ backgroundColor: ser.color }}
               >
@@ -228,7 +230,10 @@ export default function Search() {
       </div>
       <div className="w-full grid grid-cols-3 gap-8 px-32 mt-16">
         {menu.map((row, i) => (
-          <div className="w-full p-4 bg-white drop-shadow-lg rounded-3xl overflow-hidden relative">
+          <div
+            key={i}
+            className="w-full p-4 bg-white drop-shadow-lg rounded-3xl overflow-hidden relative"
+          >
             <div className="rounded-full border-2 border-white drop-shadow-lg w-64 h-64 -translate-x-1/2 -translate-y-1/2 overflow-hidden absolute">
               <img src={row.image}></img>
             </div>

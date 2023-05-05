@@ -1,48 +1,49 @@
 import Link from "next/link";
-
-const navbar = [
-  {
-    name: "Бүх хоол",
-  },
-  {
-    name: "Трэнд",
-  },
-  {
-    name: "Махан хоол",
-  },
-  {
-    name: "Эрүүл",
-  },
-  {
-    name: "Тэмдэглэлт",
-  },
-  {
-    name: "Нийтийн",
-  },
-  {
-    name: "Амттан",
-  },
-];
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const [data, setData] = useState([]);
+
+  function getData() {
+    fetch(`${process.env.API_URL}/api/category`)
+      .then((response) => response.json())
+      .then((result) => setData(result.data));
+  }
+
+  const router = useRouter();
+
+  useEffect(() => getData(), []);
   return (
     <div className="w-full h-12 sticky z-20 top-0 flex items-center bg-beige">
       <title>Yammi</title>
       <div className="w-full h-8 bg-primary absolute"></div>
       <div className="w-full z-10 flex  items-center justify-between">
-        <div className="flex w-[75%]">
-          <div className="font-pacifico bg-white w-32 h-12 items-center justify-center text-3xl rounded-3xl ml-24 drop-shadow-lg hover:bg-slate-200 xl:flex hidden">
-            <Link href="/">Yammi</Link>
-          </div>
+        <div className="flex">
+          <Link href="/">
+            <div className="font-pacifico bg-white w-32 h-12 items-center justify-center text-3xl rounded-3xl ml-24 drop-shadow-lg hover:bg-slate-200 xl:flex hidden">
+              Yammi
+            </div>
+          </Link>
 
-          <div className="bg-white ml-1 h-12 grid-cols-6 w-[70%] rounded-3xl drop-shadow-lg gap-6 px-10 relative items-center justify-center xl:flex hidden ">
-            {navbar.map((row, i) => (
-              <Link href="/menu">
-                <div className="uppercase text-sm hover:text-primary">
-                  {row.name}
-                </div>
-              </Link>
-            ))}
+          <div className="bg-white ml-1 h-12 grid-cols-6 rounded-3xl drop-shadow-lg gap-6 px-10 relative items-center justify-center xl:flex hidden ">
+            <Link href="/category/">
+              <div className={`uppercase text-sm hover:text-primary `}>
+                Бүгд
+              </div>
+            </Link>
+            {data &&
+              data.map((row, i) => (
+                <Link href={"/category/" + row.id} key={i}>
+                  <div
+                    className={`uppercase text-sm hover:text-primary ${
+                      router.query.id == row.id ? "text-primary" : ""
+                    }`}
+                  >
+                    {row.name}
+                  </div>
+                </Link>
+              ))}
           </div>
           <div className="bg-white h-12 w-32 rounded-r-full drop-shadow-lg mr-1 flex justify-center items-center hover:bg-slate-200 xl:hidden grid-cols-2 gap-5">
             <svg
@@ -62,7 +63,7 @@ export default function Navbar() {
             <div className="font-pacifico ">Yammi</div>
           </div>
         </div>
-        <div className="bg-white grid-cols-3 gap-8 w-72 h-12 drop-shadow-lg rounded-l-full items-center justify-center pl-2 xl:flex hidden">
+        <div className="bg-white grid-cols-2 gap-8 w-72 h-12 drop-shadow-lg rounded-l-full items-center justify-center pl-2 xl:flex hidden">
           <Link href="/search">
             <svg
               xmlns="http://www.w3.org/2000/svg"
