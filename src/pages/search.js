@@ -28,7 +28,7 @@ export default function Search() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        materials: selectedIds,
+        materials: selectedIds.map((a) => a.id),
       }),
     })
       .then((response) => response.json())
@@ -82,44 +82,70 @@ export default function Search() {
       </div>
       <div className="w-full flex justify-center py-4 items-center px-24">
         <div className="absolute w-full h-8 bg-primary"></div>
-        <div className="w-full bg-white drop-shadow-lg rounded-2xl overflow-hidden">
-          <div className="grid grid-cols-10 px-12 gap-4 p-4">
-            {materialCategory &&
-              materialCategory.map((row, j) => (
-                <button
-                  onClick={() => setSelectedCategory(row.id)}
-                  key={j}
-                  className={`w-full py-1 drop-shadow-lg text-center rounded-3xl text-white bg-primary ${
-                    selectedCategory == row.id ? " mix-blend-luminosity" : ""
-                  }`}
+        <div className="w-full bg-white drop-shadow-lg rounded-2xl overflow-hidden flex">
+          <div className="w-2/3">
+            <div className="flex px-12 gap-4 p-4 w-full">
+              {materialCategory &&
+                materialCategory.map((row, j) => (
+                  <button
+                    onClick={() => setSelectedCategory(row.id)}
+                    key={j}
+                    className={`w-full py-1 drop-shadow-lg text-center rounded-3xl text-white bg-primary ${
+                      selectedCategory == row.id ? " mix-blend-luminosity" : ""
+                    }`}
+                  >
+                    {row.name}
+                  </button>
+                ))}
+            </div>
+            <div className="w-full h-8 bg-amber-800 my-4 text-white pl-14 flex items-center">
+              Материалууд:
+            </div>
+            <div className="grid grid-cols-6 px-12 gap-4 p-4">
+              {materials &&
+                materials.map((row, j) => (
+                  <button
+                    key={j}
+                    onClick={() => {
+                      if (selectedIds.map((a) => a.id).includes(row.id)) {
+                        setSelectedIds(
+                          selectedIds.filter((a) => a.id != row.id)
+                        );
+                      } else
+                        setSelectedIds([
+                          ...selectedIds,
+                          { id: row.id, name: row.name, color: row.color },
+                        ]);
+                    }}
+                    className="w-full py-1 drop-shadow-lg text-center rounded-3xl text-white"
+                    style={{
+                      backgroundColor: selectedIds
+                        .map((a) => a.id)
+                        .includes(row.id)
+                        ? "#d9d9d9"
+                        : row.color,
+                    }}
+                  >
+                    {row.name}
+                  </button>
+                ))}
+            </div>
+          </div>
+          <div className="w-1/3 border border-primary rounded m-2 relative flex flex-col-reverse">
+            <div className="absolute top-2 left-1/2 -translate-x-1/2  text-sm">
+              Таны сонгосон материалууд
+            </div>
+            <div className="grid grid-cols-4 w-full gap-2 p-2">
+              {selectedIds.map((row, i) => (
+                <div
+                  key={i}
+                  style={{ backgroundColor: row.color }}
+                  className="flex items-center w-full justify-center rounded-full text-white"
                 >
                   {row.name}
-                </button>
+                </div>
               ))}
-          </div>
-          <div className="w-full h-8 bg-amber-800 my-4 text-white pl-14 flex items-center">
-            Материалууд:
-          </div>
-          <div className="grid grid-cols-10 px-12 gap-4 p-4">
-            {materials &&
-              materials.map((row, j) => (
-                <button
-                  key={j}
-                  onClick={() => {
-                    if (selectedIds.includes(row.id)) {
-                      setSelectedIds(selectedIds.filter((a) => a != row.id));
-                    } else setSelectedIds([...selectedIds, row.id]);
-                  }}
-                  className="w-full py-1 drop-shadow-lg text-center rounded-3xl text-white"
-                  style={{
-                    backgroundColor: selectedIds.includes(row.id)
-                      ? "#d9d9d9"
-                      : row.color,
-                  }}
-                >
-                  {row.name}
-                </button>
-              ))}
+            </div>
           </div>
         </div>
       </div>
