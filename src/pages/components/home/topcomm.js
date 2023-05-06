@@ -6,19 +6,19 @@ export default function Topcomment() {
   const comment = [
     {
       name: "Muunee",
-      comment: "goy site bn",
+      comment: "Хоол таалагдлаа. Амттай байлаа",
       rating: "2",
       food: "Pizza",
       profile: "../muune copy.jpg",
-      time: "69",
+      time: "7",
     },
     {
       name: "Muunee",
-      comment: "bla bla bla bla",
+      comment: "",
       rating: "1",
       food: "Pizza",
       profile: "../muune copy.jpg",
-      time: "69",
+      time: "6",
     },
     {
       name: "Muunee",
@@ -26,7 +26,7 @@ export default function Topcomment() {
       rating: "5",
       food: "Pizza",
       profile: "../muune copy.jpg",
-      time: "69",
+      time: "3",
     },
     {
       name: "Muunee",
@@ -34,7 +34,7 @@ export default function Topcomment() {
       rating: "5",
       food: "Pizza",
       profile: "../muune copy.jpg",
-      time: "69",
+      time: "2",
     },
   ];
   return (
@@ -69,7 +69,7 @@ export default function Topcomment() {
             </div>
             <div className="w-full mt-8 h-28">{row.comment}</div>
             <div className="w-full flex justify-center">
-              <Link href="/details">
+              <Link href="http://localhost:3000/food/49e5d7ce-b902-47bc-b2a3-9101cd7be2c2">
                 <div className="bg-primary text-white w-40 h-10 rounded-3xl flex items-center justify-center hover:bg-red-600">
                   Try
                 </div>

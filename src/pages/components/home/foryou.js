@@ -8,13 +8,6 @@ const foryou = [
     image:
       "https://admin.acceleratingscience.com/food/wp-content/uploads/sites/5/2020/10/istock-694177316_varietycookedmeats-1.jpg",
   },
-  {
-    value: 3,
-    desc: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum ",
-    category: "Монгол хоол",
-    image:
-      "https://www.eatthis.com/wp-content/uploads/sites/4/2021/05/healthy-foods.jpg?quality=82&strip=",
-  },
 ];
 
 export default function ForYou() {
@@ -25,7 +18,10 @@ export default function ForYou() {
         <div className="w-8 h-[70vh] bg-primary absolute z-0 "></div>
         <div className="z-10 w-full pl-[15%]">
           {foryou.map((row, i) => (
-            <Link href="/category/" key={i}>
+            <Link
+              href="http://localhost:3000/category/2ba056b9-cb23-4b69-803e-6f4ee4b6f3aa"
+              key={i}
+            >
               <div className=" w-[80%] h-96 bg-white rounded-3xl drop-shadow-lg overflow-hidden flex mb-8 justify-between">
                 <img
                   src={row.image}
