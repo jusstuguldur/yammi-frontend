@@ -15,7 +15,7 @@ export default function ForYou() {
     <div>
       <div className="w-full h-8 text-2xl pl-[7%] mb-4 uppercase">for you</div>
       <div className="w-full flex justify-center">
-        <div className="w-8 h-[70vh] bg-primary absolute z-0 "></div>
+        <div className="w-8 h-[40vh] bg-primary absolute z-0 "></div>
         <div className="z-10 w-full pl-[15%]">
           {foryou.map((row, i) => (
             <Link
