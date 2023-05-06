@@ -9,7 +9,6 @@ import Link from "next/link";
 import Interest from "./components/home/interest";
 import Footer from "./components/footer";
 import ForYou from "./components/home/foryou";
-import Channels from "./components/home/channels";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +24,6 @@ export default function Home() {
         <Topcomment></Topcomment>
         <Interest></Interest>
         <ForYou></ForYou>
-        <Channels></Channels>
         <Footer></Footer>
       </div>
     </>

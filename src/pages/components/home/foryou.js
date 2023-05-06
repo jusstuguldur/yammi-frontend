@@ -22,7 +22,7 @@ export default function ForYou() {
     <div>
       <div className="w-full h-8 text-2xl pl-[7%] mb-4 uppercase">for you</div>
       <div className="w-full flex justify-center">
-        <div className="w-8 h-[1100px] bg-primary absolute z-0 "></div>
+        <div className="w-8 h-[70vh] bg-primary absolute z-0 "></div>
         <div className="z-10 w-full pl-[15%]">
           {foryou.map((row, i) => (
             <Link href="/category/" key={i}>
@@ -40,7 +40,7 @@ export default function ForYou() {
                 >
                   <div className="w-full uppercase">collection</div>
                   <div className="uppercase text-2xl mt-4 font-semibold">
-                    {row.value} best {row.category} foods recipes
+                    Танд {row.value} шилдэг {row.category} санал болгож байна
                   </div>
                   <div className="mt-4">{row.desc}</div>
                 </div>

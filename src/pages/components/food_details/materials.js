@@ -7,7 +7,7 @@ export default function Materials({ materials }) {
         <div className="h-8 w-full text-white bg-primary px-5 flex items-center text-lg">
           Материалууд:
         </div>
-        <div className="w-full px-4 grid grid-cols-3 gap-4 mt-4">
+        <div className="w-full px-2 grid grid-cols-3 gap-4 mt-4">
           {materials &&
             materials.map((row, i) => (
               <div
