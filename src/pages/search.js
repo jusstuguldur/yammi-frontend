@@ -184,7 +184,7 @@ export default function Search() {
               <div className="w-full  text-center mt-4 break-all">
                 {row.desc}
               </div>
-              <Link href="/details">
+              <Link href={`/food/${row.id}`}>
                 <div className="w-[80%] py-2 bg-primary text-white text-center rounded-3xl ml-[10%] mt-8 hover:bg-red-600">
                   Үргэлжлүүлэх
                 </div>
